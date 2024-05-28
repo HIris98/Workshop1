@@ -32,7 +32,9 @@ library(stringr)
 ## Locate the data (in the file explorer) and load it in R
 ```{r}
 #Download ‘readxl’ package
+if(!"readxl" %in% installed.packages()){install.packages("readxl")}
 #Load the ‘readxl’ package
+install.package("readxl")
 
 #Add data location as variable
 #Read the first tab of the data file
